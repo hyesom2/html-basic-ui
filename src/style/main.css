@@ -2,33 +2,76 @@ body {
   font-family: "NotoSans", sans-serif;
 }
 
+/* 유사클래스, 유사요소 */
+:root {
+  --container-size: 940px;
+}
+
+.header, .visual, .main, .slogan, .footer-inner {
+  /* width: 940px; */
+  width: var(--container-size, 940px);
+  margin: 0 auto;
+}
+
 /* header(헤더) */
 .header {
-  width: 940px;
+  /* width: 940px; */
   background-color: yellow;
+  /* border: 1px solid red;
+  padding: 20px;
+  margin: 50px auto; */
+  height: 10vh;
 }
 
 /* visual(비주얼) */
 .visual {
-  width: 940px;
+  /* width: 940px; */
   /* inline-size: 940px;  */
+  /* width === inline-size ?? */
   background-color: pink;
+  /* border: 1px solid red;
+  padding: 20px;
+  margin: 50px auto; */
+  height: 10vh;
 }
 
 /* main content(메인) */
 .main {
+  display: flex;
+  flex-flow: row nowrap;
+  /* justify-content: space-between;
+  align-items: center; */
   /* width: 940px; */
   background-color: skyblue;
+  /* border: 1px solid red;
+  padding: 20px;
+  margin: 50px auto; */
+  height: 60vh;
+}
+.group {
+  width: 33.3333%;
+  border: 1px solid red;
 }
 
 /* slogan(슬로건) */
 .slogan {
-  width: 940px;
+  /* width: 940px; */
   background-color: beige;
+  /* border: 1px solid red;
+  padding: 20px;
+  margin: 50px auto; */
+  height: 10vh;
 }
 
 /* footer(푸터) */
 .footer {
-  width: 940px;
+  /* width: 940px; */
   background-color: purple;
+  /* border: 1px solid red;
+  padding: 20px;
+  margin: 50px auto; */
+}
+.footer-inner {
+  background-color: yellow;
+  height: 10vh;
 }
