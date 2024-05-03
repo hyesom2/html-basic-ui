@@ -7,6 +7,7 @@ body {
   --container-size: 940px;
 }
 
+/* 셀렉터 그룹핑 */
 .header, .visual, .main, .slogan, .footer-inner {
   /* width: 940px; */
   width: var(--container-size, 940px);
@@ -15,13 +16,20 @@ body {
 
 /* header(헤더) */
 .header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   /* width: 940px; */
-  background-color: yellow;
+  background-color: white;
   /* border: 1px solid red;
-  padding: 20px;
   margin: 50px auto; */
-  height: 10vh;
+  height: 200px;
+  padding: 0 50px; /* 좌우 50px씩 총 100px 추가 */
+  /* border-radius: 0 0 30px 30px / 0 0 60px 60px; */
+  border-radius: 0 0 15px 15px;
 }
+/* logo(로고) */
+
 
 /* visual(비주얼) */
 .visual {
@@ -37,20 +45,43 @@ body {
 
 /* main content(메인) */
 .main {
-  display: flex;
+  /* display: flex;
   flex-flow: row nowrap;
-  /* justify-content: space-between;
-  align-items: center; */
+  justify-content: space-between;
+  align-items: stretch; */
   /* width: 940px; */
+  height: 60vh;
+  /* padding: 28px 16px 36px 16px; */
+  padding: 28px 16px 36px;
   background-color: skyblue;
   /* border: 1px solid red;
   padding: 20px;
   margin: 50px auto; */
-  height: 60vh;
 }
+/* .group-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 auto;
+} */
+
 .group {
-  width: 33.3333%;
+  /* width: 33.3333%; */
   border: 1px solid red;
+  float: left;
+}
+.group1 {
+  width: 250px;
+  /* order: 2; */
+}
+.group2 {
+  position: absolute;
+  width: 380px;
+  /* order: 3; */
+}
+.group3 {
+  width: 190px;
+  /* order: 1; */
+  /* order: -1; */
 }
 
 /* slogan(슬로건) */
@@ -74,4 +105,17 @@ body {
 .footer-inner {
   background-color: yellow;
   height: 10vh;
+}
+
+/* ------------------------------------------------ */
+/*      flex를 지원하는 웹브라우저를 위한 스타일      */
+/* ------------------------------------------------ */
+
+@supports (display: flex) {
+  .main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
 }
