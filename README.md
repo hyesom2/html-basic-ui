@@ -43,4 +43,16 @@ npm run dev
 - 선택자 그룹핑 (선택자, 선택자 ...)
 - 변수 (Custom Property)
 - flexbox 기초
+
 ---
+
+## 2025-05-03
+- box-sizing
+- flex ( flex container / flex-grow / flex item 속성 / justify-content / align-items )
+- float / clear / display: flow-root
+- float 요소 안에서 float 요소로 정의하기
+- 레이아웃을 위해 margin 활용
+- 구조 선택자(nth-child)
+- border-radius
+- position 속성(relative, absolute)
+- supports 규칙
