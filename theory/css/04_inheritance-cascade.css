@@ -1,0 +1,16 @@
+body {
+  /* 상속 */
+  color: #ff0000;
+  /* color: rrggbb방식 0~f * 0~f * 0~f */
+  font-size: 30px;
+
+}
+
+
+div {
+  border: 1px solid blue;
+}
+
+p {
+  border: inherit;
+}
