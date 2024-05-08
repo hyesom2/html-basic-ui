@@ -1,0 +1,25 @@
+.sr-only {
+  background-color: red;
+  position: absolute; /* layout상에서 화면에 떠있음 */
+  /* 방법1 */
+  /* top: -9999px; */
+  inset-block-start: -9999px; /* top에 해당 */
+  /* inline-size: 1px; */ 
+  /* 가로의 논리 사이즈*/
+  /* block-size: 1px; 높이의 논리 사이즈*/
+  /* 빨간점 : 위의 1px x 1px 사이즈의 상자에서 overflow된 것*/
+  
+  /* 방법2 */
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  padding: 0;
+  white-space: nowrap;
+  border-radius: 0;
+  /* opacity: 0; */
+  /* clip-path-maker 참고 */
+}
