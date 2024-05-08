@@ -1,0 +1,22 @@
+@keyframes size {
+  0% {
+    width: 0;
+    inline-size: 0;
+  }
+
+  100% {
+    width: 500px;
+    inline-size: 500px;
+  }
+}
+
+.box {
+  background-color: yellow;
+  width: 0;
+  inline-size: 0;
+  overflow: hidden;
+  animation: size 10s 5s;
+  animation-name: size;
+  animation-duration: 10s;
+  animation-delay: 5s;
+}
