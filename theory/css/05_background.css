@@ -1,0 +1,22 @@
+.box {
+  /* 배경색 */
+  width: 500px;
+  height: 300px;
+  inline-size: 500px;
+  block-size: 300px;
+  border: 20px dashed blue;
+  padding: 20px;
+  background-color: pink;
+  background-image: url('../../src/images/coffee.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-size: cover; */
+}
+
+.container {
+  width: 600px;
+  height: 300px;
+  inline-size: 600px;
+  block-size: 300px;
+  border: 1px solid red;
+}
