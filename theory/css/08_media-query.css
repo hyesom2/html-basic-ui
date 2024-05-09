@@ -1,0 +1,26 @@
+/* 모든 device */
+/* mobile - mobile first */
+body {
+  background-color: yellow;
+}
+
+/* 320이상 640이하 */
+@media (min-width: 320px) and (max-width: 640px) {
+  body {
+    background-color: orange;
+  }
+}
+
+/* 640이상 800이하 */
+@media (min-width: 640px) and (max-width: 800px) {
+  body {
+    background-color: pink;
+  }
+}
+
+/* 1024이상 */
+@media (min-width: 1024px) {
+  body {
+    background-color: lime;
+  }
+}
