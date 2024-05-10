@@ -1,0 +1,65 @@
+@import url('../../style/reset.css');
+@import url('../../style/theme.css');
+@import url('../../style/base.css');
+
+/* checkbox */
+.form-checkbox {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.form-checkbox > input {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  appearance: none;
+}
+.form-checkbox > input:checked + label {
+  background-image: url('../images/checked.svg');
+}
+
+.form-checkbox > label {
+  background-image: url('../images/un-check.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  padding-left: 20px;
+}
+
+/* tooltip */
+.tooltip-icon:hover + .tooltip-content,
+.tooltip-icon:focus + .tooltip-content {
+  display: block;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip-content {
+  --bg-color: rgba(0, 0, 0, 0.8);
+  --text-color: var(--white);
+  --link-color: var(--accent-yellow);
+  --radius: 3px;
+
+  position: absolute;
+  top: 100%;
+  display: none;
+  width: 17.5rem;
+  padding: 8px 12px;
+  font-size: 0.75rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: left;
+  border-radius: var(--radius);
+  margin: 0;
+
+  a {
+    display: block;
+    color: var(--link-color);
+  }
+}

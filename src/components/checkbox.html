@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>checkbox</title>
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="./css/checkbox.css" />
+</head>
+<body>
+  <h1>checkbox</h1>
+  
+  <!-- checkbox를 다른 이미지로 : background로 바꾸기 -->
+  <div class="form-checkbox" role="group">
+    <input type="checkbox" id="saveLoginInfo" name="saveLoginInfo" />
+    <label for="saveLoginInfo">간편로그인 정보 저장</label>
+  </div>
+
+  <!-- radio button component -->
+  <div role="group" aria-labelledby="gender">
+    <strong id="gender">성별</strong>
+    <div class="form-radio">
+      <input type="radio" id="male" name="gender" />
+      <label for="male">남자</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" id="female" name="gender" />
+      <label for="female">여자</label>
+    </div>
+  </div>
+
+  
+  <!-- 정보를 나타내는 Tooltip component -->
+  <div class="tooltip" role="tooltip">
+    <span tabindex="0" class="fa-solid fa-circle-exclamation tooltip-icon" aria-label="간편 로그인 정보 저장 안내사항"></span>
+    <p class="tooltip-content">
+      로그인한 계정의 정보가 저장됩니다. 개인정보 보호를 위해 개인 기기에서만 사용해 주세요.
+      <a href="#">도움말 보기</a>
+    </p>
+  </div>
+</body>
+</html>
