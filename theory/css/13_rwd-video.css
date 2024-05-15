@@ -1,0 +1,19 @@
+@import url('../../src/style/default.css');
+
+/* layout : 실제 크기를 갖고 있음 */
+.box {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* video component */
+.video-container {
+  padding: 20px;
+  border: 1px solid #000;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
+
+  .video {
+    width: 100%;
+    inline-size: 100%;
+  }
+}
