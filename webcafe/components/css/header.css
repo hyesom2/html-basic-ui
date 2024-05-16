@@ -1,0 +1,72 @@
+@import url('./grid-layout.css');
+
+/* common layout */
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  min-height: 100vh;
+
+  .header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    width: 100%;
+    inline-size: 100%;
+    height: 100px;
+    block-size: 100px;
+  }
+}
+
+/* 메인 메뉴 버튼 */
+.burger-button {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+/* 방법1 : position */
+/* .burger-button {
+  position: relative;
+}
+.burger-bar {
+  display: block;
+  width: 100%;
+  height: 20%;
+  border-radius: 10px;
+  background-color: #fff;
+} */
+
+/* 방법2 : flexbox */
+.burger-button {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  
+  .burger-bar {
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all 300ms ease-in-out;
+  }
+}
+.burger-button.is-active {
+  justify-content: center;
+  overflow: hidden;
+
+  .burger-bar-top {
+    translate: 0 100%;
+    rotate: 45deg;
+  }
+  .burger-bar-middle {
+    translate: -100% 0;
+  }
+  .burger-bar-bottom {
+    translate: 0 -100%;
+    rotate: -45deg;
+  }
+}
