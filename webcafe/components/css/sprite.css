@@ -1,0 +1,43 @@
+/* 스프라이트 이미지 */
+.sprite {
+  height: 60px;
+  /* background-color: hotpink;
+  background-image: url('../../../src/images/sprite_main.png');
+  background-repeat: no-repeat; */
+  background: hotpink url('../../../src/images/sprite_main.png') no-repeat;
+  /* text-indent: 65px; */
+  padding-left: 64px;;
+}
+
+/* .news .sprite {
+  background-position: 0 =230px;;
+} */
+
+.sprite-book {
+  background-position: 0 0;
+}
+.sprite-news {
+  background-position: 0 -230px;
+}
+.sprite-board {
+  background-position: 0 -115px;
+}
+.sprite-site {
+  background-position: 0 -345px;
+}
+.sprite-sns {
+  background-position: 0 -460px;
+}
+
+/* 헤드라인 스타일 */
+.headline {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* flex layout 스타일 */
+.flex-items-center {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
